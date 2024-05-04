@@ -1,146 +1,19 @@
-# EarthquakeDataCenters
-## Overview
-The *SeedLink protocol* is a robust data transmission intended for use on the Internet or private circuits that support TCP/IP. The protocol is robust in that clients may disconnect and reconnect without losing data, in other words transmissions may be resumed as long as the data still exist in the servers buffer. Requested data streams may be limited to specific networks, stations, locations and/or channels. All data packets are 512-byte Mini-SEED records.
-<br>(More information [here](https://www.seiscomp.de/doc/apps/seedlink.html))
+Earthquake Data Center Link Collection
 
-The *FSDNWS-Station* provides access to station metadata and instrument specifics in FDSN StationXML format. Metadata can be selected on SEED network, station, location or channel identifiers in addition to spatiotemporal constraints. Metadata can be extracted at multiple levels of detail.
-<br>(More information [here](http://www.fdsn.org/webservices/))
+This repository maintains a trio of Markdown files, cataloguing public earthquake data centers adhering to particular data formats: FDSNWS, SEEDLink, and Earthworm.
+Files
 
-Winston is a Java-based seismic wave server, which provides data and plots to clients.
+Located directly under the project's root folder, you will encounter the following files:
 
-## List
+[Earthworm.md](https://raw.githubusercontent.com/WalkTheEarth/EarthquakeDataCenters/main/Earthworm.md)
+- Enumerates URLs leading to Earthworm-compatible data centers. All entries appear consecutively, separated merely by line breaks.
 
-### Seedlink
-<table>
-	<thead>
-		<tr><th align="left">Name</th><th align="left">Host</th></tr>
-	</thead>
-	<tbody>
-		<tr><td align="left">AusPass</td><td align="left">auspass.edu.au</td></tr>
-		<tr><td align="left">BGR</td><td align="left">eida.bgr.de</td></tr>
-		<tr><td align="left">CISMID</td><td align="left">www&#46;cismid.uni.edu.pe</td></tr>
-		<tr><td align="left">ENS</td><td align="left">ephesite.ens.fr</td></tr>
-		<tr><td align="left">GEOFON, GFZ</td><td align="left">geofon.gfz-potsdam.de</td></tr>
-    		<tr><td align="left">GEONET</td><td align="left">link.geonet.org.nz</td></tr>
-		<tr><td align="left">Geoscience Australia</td><td align="left">seis-pub.ga.gov.au</td></tr>
-		<tr><td align="left">GSRAS (?)</td><td align="left">89.22.182.133</td></tr>
-		<tr><td align="left">Helsinki</td><td align="left">finseis.seismo.helsinki.fi</td></tr>
-		<tr><td align="left">Haiti</td><td align="left">ayiti.unice.fr</td></tr>
-		<tr><td align="left">ICGC</td><td align="left">ws.icgc.cat</td></tr>
-		<tr><td align="left">IDA Project</td><td align="left">rtserve.ida.ucsd.edu</td></tr>
-		<tr><td align="left">IFZ</td><td align="left">data.ifz.ru</td></tr>
-		<tr><td align="left">IPGP</td><td align="left">rtserver.ipgp.fr</td></tr>
-		<tr><td align="left">IRIS DMC</td><td align="left">rtserve.iris.washington.edu</td></tr>
-		<tr><td align="left">IRIS Jamaseis</td><td align="left">jamaseis.iris.edu</td></tr>
-		<tr><td align="left">ISNET - UNINA<br>Università degli Studi di Napoli Federico II</td><td align="left">185.15.171.86</td></tr>
-		<tr><td align="left">LMU</td><td align="left">erde.geophysik.uni-muenchen.de</td></tr>
-		<tr><td align="left">NIGGG</td><td align="left">195.96.231.100</td></tr>
-		<tr><td align="left">NRCAN</td><td align="left">earthquakescanada.nrcan.gc.ca</td></tr>
-		<tr><td align="left">OBSEBRE</td><td align="left">obsebre.es</td></tr>
-		<tr><td align="left">OGS</td><td align="left">nam.ogs.it</td></tr>
-		<tr><td align="left">Oklahoma University</td><td align="left">rtserve.ou.edu</td></tr>
-		<tr><td align="left">ORFEUS</td><td align="left">eida.orfeus-eu.org</td></tr>
-		<tr><td align="left">PLSN (IGF Poland)</td><td align="left">hudson.igf.edu.pl</td></tr>
-		<tr><td align="left">Red Sìsmica de Puerto Rico</td><td align="left">161.35.236.45</td></tr>
-		<tr><td align="left">Red Sìsmica Baru</td><td align="left">helis.redsismicabaru.com</td></tr>
-		<tr><td align="left">RESIF</td><td align="left">rtserve.resif.fr</td></tr>
-		<tr><td align="left">SANET</td><td align="left">147.213.113.73</td></tr>
-		<tr><td align="left">RSIS</td><td align="left">rsis1.on.br</td></tr>
-		<tr><td align="left">SCSN-USC<br>(South Carolina Seismic Network)</td><td align="left">eeyore.seis.sc.edu:6382</td></tr>
-		<tr><td align="left">Seisme IRD</td><td align="left">rtserve.ird.nc</td></tr>
-		<tr><td align="left">Staneo</td><td align="left">vibrato.staneo.fr</td></tr>
-		<tr><td align="left">SNAC NOA</td><td align="left">snac.gein.noa.gr</td></tr>
-		<tr><td align="left">TexNet</td><td align="left">rtserve.beg.utexas.edu</td></tr>
-		<tr><td align="left">Thai Meteorological Department</td><td align="left">119.46.126.38</td></tr>
-		<tr><td align="left">UFRN (Universidade Federal do Rio Grande do Norte)</td><td align="left">sislink.geofisica.ufrn.br</td></tr>
-		<tr><td align="left">Unical<br>Universita Della Calabria</td><td align="left">www&#46;sismocal.org</td></tr>
-		<tr><td align="left">UNITS<br>Università degli studi di Trieste</td><td align="left">rtweb.units.it</td></tr>
-		<tr><td align="left">UNIV-AG<br>Université des Antilles</td><td align="left">seedsrv0.ovmp.martinique.univ-ag.fr</td></tr>
-		<tr><td align="left">Universidade de Évora</td><td align="left">clv-cge.uevora.pt</td></tr>
-		<tr><td align="left">Universidad de Colima</td><td align="left">148.213.24.15</td></tr>
-		<tr><td align="left">UPR</td><td align="left">worm.uprm.edu</td></tr>
-		<tr><td align="left">USGS</td><td align="left">cwbpub.cr.usgs.gov</td></tr>
-		<tr><td align="left">USP-IAG</td><td align="left">seisrequest.iag.usp.br</td></tr>
-	</tbody>
-</table>
+[Seedlinks.md](https://raw.githubusercontent.com/WalkTheEarth/EarthquakeDataCenters/main/Seedlinks.md) 
+- Assembles URLs connected to SEEDLink-compatible data centers, sequentially ordered and divided using line breaks.
 
-***Note**: seedlink default port is 18000*
+[FDSNWS.md](https://raw.githubusercontent.com/WalkTheEarth/EarthquakeDataCenters/main/FDSNWS.md) 
+- Accumulates URLs associated with FDSN Web Services (FDSNWS)-compatible data centers. Individual items are aligned without interruptions besides those imposed by line breaks.
 
-### Earthworm
-<table>
-	<thead>
-	<tr><th align="left">Name</th><th align="left">Host</th><th align="left">Port</th></tr>
-	</thead>
-	<tbody>
-		<tr><td align="left">Carpathian Ukraine</td><td align="left">seism.lviv.ua</td><td>16022</td></tr>
-		<tr><td align="left">CSIC GEO3BCN</td><td align="left">earthworm.geo3bcn.csic.es</td><td>16022</td></tr>
-		<tr><td align="left">NCEDC 1</td><td align="left">ncedc.org</td><td>16021</td></tr>
-		<tr><td align="left">NCEDC 2</td><td align="left">ncedc.org</td><td>16022</td></tr>
-		<tr><td align="left">NCEDC 3</td><td align="left">ncedc.org</td><td>16023</td></tr>
-		<tr><td align="left">NCEDC 4</td><td align="left">ncedc.org</td><td>16024</td></tr>
-		<tr><td align="left">UPR</td><td align="left">worm.uprm.edu</td><td>16022</td></tr>
-	</tbody>
-</table>
+Due to brevity constraints, these textual compilations refrain from incorporating further elaboration beyond the mere enumeration of URLs. Nevertheless, they aim to offer value despite minimal embellishment.
 
-### Winston Wave Server
-<table>
-	<thead>
-		<tr><th align="left">Name</th><th align="left">Host</th><th align="left">Port</th></tr>
-	</thead>
-	<tbody>
-		<tr><td align="left">AVO Winston</td><td align="left">pubavo1.wr.usgs.gov</td><td>16022</td></tr>
-		<tr><td align="left">ISNET - UNINA<br>Università degli Studi di Napoli Federico II</td><td align="left">lccedu.fisica.unina.it</td><td>16022</td></tr>
-		<tr><td align="left">Universidad National Costa Rica</td><td align="left">ovsvalve.una.ac.cr</td><td>16022</td></tr>
-	</tbody>
-</table>
-
-### FDSNWS
-This is a partial list not updated.
-<table>
-	<thead>
-		<tr><th align="left">Name</th><th align="left">Link</th></tr>
-	</thead>
-	<thead>
-		<tr><th colspan="2" align="center">Americas</th></tr>
-	</thead>
-	<tbody>
-		<tr><td align="left">IRIS DMC</td><td align="left">http://service.iris.edu/fdsnws/station/1/</td></tr>
-		<tr><td align="left">NCEDC</td><td align="left">http://service.ncedc.org/fdsnws/station/1</td></tr>
-		<tr><td align="left">SCEDC</td><td align="left">http://service.scedc.caltech.edu/fdsnws/station/1/</td></tr>
-		<tr><td align="left">TexNet</td><td align="left">http://rtserve.beg.utexas.edu/fdsnws/station/1/</td></tr>
-		<tr><td align="left">USP-IAG</td><td align="left">http://seisrequest.iag.usp.br/fdsnws/station/1/</td></tr>
-		<tr><td align="left">Raspberry Shake</td><td align="left">https://fdsnws.raspberryshakedata.com/fdsnws/station/1</td></tr>
-	</tbody>
-	<thead>
-		<tr><th colspan="2" align="center">Asia</th></tr>
-	</thead>
-	<tbody>
-		<tr><td align="left">BMKG</td><td align="left">https://geof.bmkg.go.id/fdsnws/station/1/</td></tr>
-	</tbody>
-	<thead>
-		<tr><th colspan="2" align="center">Europe</th></tr>
-	</thead>
-	<tbody>
-		<tr><td align="left">BGR</td><td align="left">http://eida.bgr.de/fdsnws/station/1/</td>
-		<tr><td align="left">KNMI</td><td align="left">http://rdsa.knmi.nl/fdsnws/station/1/</td>
-		<tr><td align="left">KOERI</td><td align="left">http://eida-service.koeri.boun.edu.tr/fdsnws/station/1/</td>
-		<tr><td align="left">ETHZ</td><td align="left">http://eida.ethz.ch/fdsnws/station/1/</td>
-   		<tr><td align="left">GEOFON, GFZ</td><td align="left">http://geofon.gfz-potsdam.de/fdsnws/station/1/</td></tr>
-		<tr><td align="left">ICGC</td><td align="left">http://ws.icgc.cat/fdsnws/station/1/</td>
-		<tr><td align="left">IPGP</td><td align="left">http://eida.ipgp.fr/fdsnws/station/1/</td>
-		<tr><td align="left">INGV</td><td align="left">http://webservices.ingv.it/fdsnws/station/1/</td>
-		<tr><td align="left">LMU</td><td align="left">http://erde.geophysik.uni-muenchen.de/fdsnws/station/1/</td>
-		<tr><td align="left">NIEP</td><td align="left">http://eida-sc3.infp.ro/fdsnws/station/1/</td>
-		<tr><td align="left">NOA</td><td align="left">http://eida.gein.noa.gr/fdsnws/station/1/</td>
-		<tr><td align="left">ORFEUS</td><td align="left">http://www.orfeus-eu.org/fdsnws/station/1/</td>
-		<tr><td align="left">RESIF</td><td align="left">http://ws.resif.fr/fdsnws/station/1/</td>
-		<tr><td align="left">SNAC NOA</td><td align="left">http://snac.gein.noa.gr:8080/fdsnws/station/1/</td>	
-	</tbody>
-	<thead>
-		<tr><th colspan="2" align="center">Oceania</th></tr>
-	</thead>
-	<tbody>
-		<tr><td align="left">AusPass</td><td align="left">http://auspass.edu.au:8080/fdsnws/station/1/</td></tr>
-	</tbody>
-	
-</table>
+Kindly inform us about any perceived inconsistencies or suggest potential improvements through issues or pull requests. Your collaboration remains crucial, and we always strive to better our materials accordingly. Enjoy exploring these datasets!
