@@ -1,6 +1,6 @@
 Earthquake Data Center Link Collection
 ---
-This repository maintains a trio of Markdown files, cataloguing public earthquake data centers adhering to particular data formats: FDSNWS, SEEDLink, and Earthworm.
+This repository maintains four Markdown files, cataloguing public earthquake data centers adhering to particular data formats: FDSNWS, SEEDLink, and Earthworm.
 Files
 
 Located directly under the project's root folder, you will encounter the following files:
@@ -13,6 +13,9 @@ Located directly under the project's root folder, you will encounter the followi
 
 [FDSNWS.md](https://raw.githubusercontent.com/WalkTheEarth/EarthquakeDataCenters/main/FDSNWS.md) 
 - Accumulates URLs associated with FDSN Web Services (FDSNWS)-compatible data centers. Individual items are aligned without interruptions besides those imposed by line breaks.
+
+[Winston.md](https://raw.githubusercontent.com/WalkTheEarth/EarthquakeDataCenters/main/Winston.md)
+- Accumulates URLs associated with Winston Wave-compatible data centers. Individual items are aligned without interruptions besides those imposed by line breaks.
 
 Due to brevity constraints, these textual compilations refrain from incorporating further elaboration beyond the mere enumeration of URLs. Nevertheless, they aim to offer value despite minimal embellishment.
 
