@@ -1,6 +1,7 @@
 Earthquake Data Center Link Collection
 ---
-This repository maintains four Markdown files, cataloguing public earthquake data centers adhering to particular data formats: FDSNWS, SEEDLink, and Earthworm.
+This repository maintains four Markdown files, cataloguing public earthquake data centers adhering to particular data formats: FDSNWS, SEEDLink, Earthworm and Winston.
+
 Files
 
 Located directly under the project's root folder, you will encounter the following files:
