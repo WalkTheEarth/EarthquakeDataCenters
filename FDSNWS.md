@@ -20,3 +20,4 @@ http://www.orfeus-eu.org/fdsnws/station/1/
 http://ws.resif.fr/fdsnws/station/1/
 http://snac.gein.noa.gr:8080/fdsnws/station/1/	
 http://auspass.edu.au:8080/fdsnws/station/1/
+https://www.fdsn.org/ws/datacenters/1/
